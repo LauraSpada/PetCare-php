@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultation Register</title>
+</head>
+<body>
+    
+    <h2>Consultation Register Page:</h2>
+                
+     <form name="cadConsulta" method="POST" action="../actions/insert.php" >
+        <input type=hidden name=table value="consultation">
+        
+        <label>
+            <strong>CRMV:</strong><br>
+            <input type="number" name="crmv" placeholder="Enter CRMV" required><br><br>
+        </label>
+        <label>
+            <strong>Animal Id:</strong><br>
+            <input type="number" name="ida" placeholder="Enter animal id" required><br>
+        </label>
+        <label>
+            <strong>Hour:</strong><br>
+            <input type="time" name="hour" placeholder="Enter hour"><br><br>
+        </label>
+        <label>
+            <strong>Date:</strong><br>
+            <input type="date" name="c_date" placeholder="Enter date"><br><br>
+        </label>
+        <label>
+            <strong>Reason:</strong><br>
+            <input type="text" name="reason" placeholder="Enter reason"><br><br>
+        </label>
+        
+        <input type="submit" value="Register"/>
+    </form>
+    <a href="../index.html">Back</a>
+</body>
+</html>

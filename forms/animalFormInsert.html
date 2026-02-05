@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Register</title>
+</head>
+<body>
+    
+    <h2>Animal Register Page:</h2>
+                
+     <form name="regAnimal" method="POST" action="../actions/insert.php" >
+        <input type=hidden name=table value="animal">
+        
+        <label>
+            <strong>Name:</strong><br>
+            <input type="text" name="name" placeholder="type the name" required><br>
+        </label>
+        <label>
+            <strong>Birth Date:</strong><br>
+            <input type="date" name="b_date" placeholder="type the birthdate" required><br>
+        </label>
+        <label>
+            <strong>Breed:</strong><br>
+            <input type="text" name="breed" placeholder="Enter breed"><br><br>
+        </label>
+         <label>
+            <strong>Owner CPF:</strong><br>
+            <input type="text" name="cpf" placeholder="type the cpf" required><br>
+        </label>
+        
+        <input type="submit" value="Register"/>
+    </form>
+    
+    <a href="../index.html">Back</a>
+</body>
+</html>
